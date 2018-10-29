@@ -21,15 +21,11 @@ namespace RPG_game
             InitializeComponent();
 
             Location location = new Location(1, "Home", "Tis but yer home");
+            Location test2 = new Location(2, "test", "test purpose",null,null, null);
             
 
-            _player = new Player(); //player class instantiation- object player
-            //properties of object PLAYER
-            _player.CurrentHitPoints = 10;
-            _player.MaximumHitPoints = 10;
-            _player.Gold = 10;
-            _player.ExperiencePoints = 0;
-            _player.Level = 0;
+            _player = new Player(10,10,10,0,0); //player class instantiation- object player
+                                                //properties of object PLAYER
 
             lblHitPoints.Text = _player.CurrentHitPoints.ToString();
             lblGold.Text = _player.Gold.ToString();
