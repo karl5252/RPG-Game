@@ -20,6 +20,9 @@ namespace RPG_game
         {
             InitializeComponent();
 
+            Location location = new Location(1, "Home", "Tis but yer home");
+            
+
             _player = new Player(); //player class instantiation- object player
             //properties of object PLAYER
             _player.CurrentHitPoints = 10;
@@ -44,13 +47,6 @@ namespace RPG_game
 
         }
 
-        private void btnTest_Click(object sender, EventArgs e)
-        {
-            lblGold.Text = "123";
-            lblLevel.Text = "124";
-            lblExperience.Text = "125";
-            lblHitPoints.Text = "126";
-
-        }
+        
     }
 }
